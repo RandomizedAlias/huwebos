@@ -2,7 +2,7 @@ function updateTime() {
         var currentTime = new Date().toLocaleString();
         var timeText = document.querySelector("#timeElement");
         timeText.innerHTML = currentTime;
-      }
+      };
       setInterval(updateTime, 1000);
 //But what if we dragged the window?
 dragElement(document.getElementById("welcome"));
@@ -17,14 +17,14 @@ function dragElement(element) {
     } else {
         element.onmousedown = startDragging;
 
-    }
+    };
     function startDragging(e) {
         e = e || window.event;
         initialX = e.clientX;
         initialY = e.clientY;
         document.onmouseup = stopDragging;
         document.onmousemove = dragElement;
-    }
+    };
     function dragElement(e) {
         e = e || window.event;
         currentX = initialX - e.clientX;
@@ -33,9 +33,16 @@ function dragElement(element) {
         initialY = e.clientY;
         element.style.top = (element.offsetTop - currentY) + "px";
         element.style.left = (element.offsetLeft - currentX) + "px";
-    }
+    };
     function stopDragging() {
         document.onmouseup = null;
         document.onmousemove = null;
-    }
-}
+    };
+};
+var welcomeScreen = document.querySelector("#welcome");
+function closeWindow(element) {
+    element.style.display = "none";
+};
+function openWindow(element) {
+    element.style.display = "flex";
+};
