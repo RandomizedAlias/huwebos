@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <body style="font-family: Helvetica, Notosans, sans-serif; 
+  <!--Initialize! Realizing Hopper!!!-->
+  <body 
+  style="font-family: Helvetica, Notosans, sans-serif; 
   background-image: url(./egg.jpg); 
   background-size: cover; 
   height: 100vh;">
         
-        <div style="position: absolute; 
+        <div 
+        id="welcome" 
+        style="
+        position: absolute; 
         top: 50%; 
         left: 50%; 
         transform: translate(-50%, -50%); 
@@ -14,19 +19,32 @@
         width: fit-content; 
         border-radius: 16px; 
         background-color: #f0ead6;">
+        <div id="obligatoryheader"
+        style="width: 100%; 
+        display: flex; 
+        align-items: center;
+        cursor: move;
+        justify-content: left;
+        margin-top: 8px;">
+        <img src="./huevo.png" style="width: 32px; height: 32px; margin-right: 8px;">
+        <p style="margin: 0px; color: #000; font-weight: 400;">--John Egg says: "grab that empty area under me to drag."</p>
+        </div>
+        <div style="background-color: #f0ead6; margin: 8px; border-radius: 14px; width: 360px; padding: 18px; ">
 
+        </div>
+          <img src="./egg.jpg" style="width: 32px; height: 32px; margin-right: 8px;">
           <h1 style="padding: 4px; margin: 4px; background-color: #f0ead6; color:black">huWebOS</h1>
           <h5 style="color: black;">if you couldnt tell already, its a joke on the spanish word for eggs and using it to pronounce WebOS</h5>
-          <h2 style="color: black;">Introduction</h2>
-          <p style="color: black;">Ohayou sekai, Good Morning World! /ref </p>
+          <h2 style="color: black;">What is huWebOS?</h2>
+          <p style="color: black;">huWebOS is a WebOS about eggs. Nothing but eggs. </p>
           <img style="width: 80px; height: 80px" src="./eggtwo.jpg">
-          <a href="https://devilmayfly.com/"><br>Go check out this guy's game on Steam :3</a>
-          <h3 style="color: black;">About Me!</h3>
-          <p style="color: black;">You can call me Alias, and I'm a huge nerd about giant mecha (Gundams) and anything related to tech!</p>
-          <p style="color: black;">My pronouns are "he/him/his"!</p>
-          <p style="color: black;"> I also <i>adore</i> Linux, but don't have a spare machine to put any distro on qwq</p>
-          <h6 style="color: black;">I'm also a furry, but should you really be caring about that?</h6>
-        
+          <p>^^eggs</p>
+          <a href="https://github.com/RandomizedAlias"><br>My Github.</a>
+          <h3 style="color: black;">Wait, really?</h3>
+          <p style="color: black;">Yes. Really. This background? Eggs. The color of this window? Eggshell White.</p>
+          <p style="color: black;">That little image? read the caption.</p>
+          <p style="color: black;">The stuff in the time bar? Yep, you guessed it. Eggs.</p>
+          <p style="color: black;">The name? Read the small header under it.</p>
         </div>
         
         
@@ -41,14 +59,19 @@
         justify-content: space-evenly;">
           <img style="margin-left: 16px; width: 48px; height: 48px;" src="./huevo.png";>
           <p style="color: black; margin-left: 16px;">
-                huWebOS
-          </p>    
-          <p style="color: black; margin-right: 16px;">
-                6/9/2026  3:24pm
+                huWebOS: your WebOS for all things egg related.
+          </p>
+          <img style="margin-left: 16px; width: 48px; height: 48px;" src="./huevo.png";>    
+          <p id="timeElement" style="color: black; margin-right: 16px;">
+          
           </p>
           
         
         </div>
+
+
+    <script src="script.js"></script>
+
   </body>
 
 </html>
